@@ -18,9 +18,12 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@Styles/*": ["./src/styles/*"],
+      "@Components/*": ["./src/components/*"],
+      "@Utils/*": ["./src/utils/*"],
+      "@Actions/*": ["./src/actions/*"],
+      "@Reducers/*": ["./src/reducers"],
+      "@Pages/*": ["./src/pages/*"]
     }
   },
   "include": [
