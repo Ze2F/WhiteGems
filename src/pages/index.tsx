@@ -1,13 +1,17 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import WelcomePage from '@/components/welcome/Welcome'
+import { useEffect } from 'react'
+import Cardpanel from '@Components/welcome/CardPanel'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Index() {
+
+  useEffect(()=> {
+    window.location.href = '/Welcome'
+  }, [])
+
   return (
     <main>
-      <WelcomePage />
     </main>
   )
 }

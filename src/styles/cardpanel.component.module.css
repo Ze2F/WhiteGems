@@ -1,0 +1,37 @@
+.bg_card {
+     @apply w-screen h-screen
+     bg-gradient-to-br from-25% from-gray-400 to-75% to-gray-600
+}
+
+.container_card {
+     @apply flex
+     overflow-x-hidden
+}
+
+.wild_card {
+     @apply relative h-screen w-1/4
+     duration-500
+     rounded-xl
+     rotate-6 hover:rotate-0
+     scale-[.85] hover:scale-[0.9]
+     hover:z-10
+     hover:contrast-125
+     before:bg-gradient-to-b before:from-0% before:from-white before:to-100% before:to-black before:opacity-20 before:rounded-xl
+     before:absolute before:w-full before:h-full
+     before:top-0 before:bottom-0 before:left-0 before:right-0
+}
+
+.title_card {
+     @apply absolute left-0 right-0 bottom-0 pt-4 pb-4
+     text-[4vw] text-center text-white
+     before:bg-gradient-to-b before:from-0% before:from-white before:to-100% before:to-black before:opacity-50 before:rounded-b-xl before:bg-black
+     before:absolute before:w-full before:h-full
+     before:top-0 before:bottom-0 before:left-0 before:right-0
+}
+
+.img_card {
+     @apply absolute left-0 right-0 bottom-0 top-0 -z-50 h-full w-full
+     overflow-hidden
+     rounded-xl
+     object-cover
+}
